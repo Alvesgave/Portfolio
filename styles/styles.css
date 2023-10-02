@@ -126,7 +126,7 @@ i{
 /* Logo */
 .logo-container {
     position: fixed;
-    top: 30%; 
+    top: 25%; 
     right: 3%; 
     z-index: 1000; /* Set a high z-index to ensure it's above other content */
 }
