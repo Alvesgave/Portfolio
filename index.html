@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Link from FontAwesome. Is useful to get icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+
+    <!-- EmailJS Script -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <!-- SweetAlert2 Script -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- Offcanvas with bootstrap5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- Put it at the end so bootstrap doesn´t override my CSS -->
+    <link rel="stylesheet" href="styles/styles.css">
+
+</head>
+<body class="main-content">
+    
+    <div class="logo-container">
+        <img src="images/LogoWhite-removebg-preview.png" alt="" class="logo">
+    </div>
+
+    <header class="section sec1 header active" id="header">
+        <div class="header-content">
+            <div class="left-header">
+                <div class="h-shape"></div>
+                
+                <div class="image">
+                    <img src="images/profilepic.png" alt="">
+                </div>
+            </div>
+            <div class="right-header">
+                <h1 class="name">
+                    Hi, I'm <span>Alejandro Vesga.</span> <br>
+                   Join me journey to become a full stack web developer.
+                </h1>
+                <p>
+                    My goal is to bridge the gap between the front-end and back-end, crafting seamless digital solutions that not only look great but also function flawlessly. I thrive on the challenge of building robust web applications, optimizing databases, and ensuring responsive design across devices. <br> <br> Thank you for exploring my portfolio, and I invite you to join me on this exciting journey through the ever-evolving world of web development. Together, we can turn ideas into digital realities.
+                </p>
+                <div class="btn-ctn">
+                     <a href="#sidebar" class="main-btn" data-bs-toggle="offcanvas" role="button" aria-controls="sidebar">
+                        <span class="btn-text">Curiosities</span>
+                        <span class="btn-icon"><i class="fa-solid fa-circle-info"></i></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="section sec2 about" id="about">
+            <div class="main-title">
+                <h2>About <span>me</span> <span class="bg-text">my stats</span></h2>
+            </div>
+            <div class="about-container">
+                <div class="left-about">
+                    <h4>Information about me</h4>
+                    <p>As a professional with a degree in Mechanical Engineering from Universidad Nacional de Colombia, I bring a strong foundation in design to my journey in web development. <br><br> My bilingual proficiency in English and Spanish has equipped me with effective communication skills, while my mechanical engineering background has honed my analytical and problem-solving abilities. <br><br> Through active participation in sports teams and innovation challenges, I've cultivated qualities such as discipline, teamwork, and adaptability. <br><br> While I'm already proficient in Python, I'm now expanding my horizons by learning HTML, CSS, and JavaScript, eager to combine my engineering background with web development expertise for innovative solutions</p>
+                    <div class="btn-ctn">
+                        <a href="https://www.canva.com/design/DAEa08y9yUo/KMyb75e0KFKXsqQaFlvvNg/view?utm_content=DAEa08y9yUo&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" class="main-btn" target="_blank">
+                           <span class="btn-text">Download CV</span>
+                           <span class="btn-icon"><i class="fa-solid fa-download"></i></span>
+                       </a>
+                   </div>
+                </div>
+                <div class="right-about">
+                    <div class="about-item">
+                        <div class="abt-text">
+                            <p class="large-text">Enyoi student</p>
+                            <p class="small-text">Creating <br /> new projects</p>
+                        </div>
+                    </div>
+                    <div class="about-item">
+                        <div class="abt-text">
+                            <p class="large-text">Learning</p>
+                            <p class="small-text">HTML, CSS and <br />Javascript</p>
+                        </div>
+                    </div>
+                    <div class="about-item">
+                        <div class="abt-text">
+                            <p class="large-text">Commited</p>
+                            <p class="small-text">with <br />self-improvement</p>
+                        </div>
+                    </div>
+                    <div class="about-item">
+                        <div class="abt-text">
+                            <p class="large-text">High</p>
+                            <p class="small-text">Problem solving<br />skills</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="about-stats">
+                <h4 class="stat-title">My Skills</h4>
+                <div class="progress-bars">
+
+                    <div class="prog-bar">
+                        <p class="prog-title">HTML5</p>
+                        <div class="progress-con">
+                            <p class="prog-text">40%</p>
+                            <div class="progress">
+                                <span class="html"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="prog-bar">
+                        <p class="prog-title">CSS3</p>
+                        <div class="progress-con">
+                            <p class="prog-text">40%</p>
+                            <div class="progress">
+                                <span class="css"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="prog-bar">
+                        <p class="prog-title">JAVASCRIPT</p>
+                        <div class="progress-con">
+                            <p class="prog-text">60%</p>
+                            <div class="progress">
+                                <span class="js"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="prog-bar">
+                        <p class="prog-title">NODEJS</p>
+                        <div class="progress-con">
+                            <p class="prog-text">10%</p>
+                            <div class="progress">
+                                <span class="node"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="prog-bar">
+                        <p class="prog-title">PYTHON</p>
+                        <div class="progress-con">
+                            <p class="prog-text">70%</p>
+                            <div class="progress">
+                                <span class="python"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="prog-bar">
+                        <p class="prog-title">REACT</p>
+                        <div class="progress-con">
+                            <p class="prog-text">10%</p>
+                            <div class="progress">
+                                <span class="react"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="section sec3 portfolio" id="portfolio">
+            <div class="main-title">
+                <h2>My <span>Portfolio</span> <span class="bg-text">My work</span></h2>
+            </div>
+            <p class="port-text">
+                Here will be some of my work that I will do in various programming languages in the future. I will be able to add new projects using a JS object.
+            </p>
+            <div class="portfolios">
+                <div class="portfolio-item">
+                    <div class="image">
+                        <h3 class="project">Portfolio Project</h3>
+                        <img src="images/port1.jpg" alt="">
+                    </div>
+                    <div class="hover-items">
+                        <h3>Project Source</h3>
+                        <div class="icons">
+                            <a href="" target="_blank" class="icon">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item">
+                    <div class="image">
+                        <h3 class="project">Not useful yet</h3>
+                        <img src="images/port2.jpg" alt="">
+                    </div>
+                    <div class="hover-items">
+                        <h3>Project Source</h3>
+                        <div class="icons">
+                            <a href="" target="_blank" class="icon">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item">
+                    <div class="image">
+                        <h3 class="project">Not useful yet</h3>
+                        <img src="images/port3.jpg" alt="">
+                    </div>
+                    <div class="hover-items">
+                        <h3>Project Source</h3>
+                        <div class="icons">
+                            <a href="" target="_blank" class="icon">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section sec4 contact" id="contact">
+            <div class="main-title">
+                <h2>Contact <span>Me</span> <span class="bg-text">my stats</span></h2>
+            </div>
+            <div class="contact-content-con">
+                <div class="left-contact">
+                    <h4>Contact me here</h4>
+                    <p>
+                        I'm thrilled that you've taken the time to explore my portfolio and learn more about my journey as a web developer. If you have any questions, inquiries, or opportunities you'd like to discuss, please don't hesitate to get in touch. Whether it's about collaboration, project ideas, or just a friendly conversation, I'm always eager to connect with fellow enthusiasts, potential clients, or like-minded individuals. Feel free to reach out to me through the contact information below, and I'll be sure to respond as soon as possible. Let's start a conversation and explore how we can create something amazing together.
+                    </p>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="icon">
+                                <i class="fa-solid fa-location-dot"></i>
+                                Location
+                            </div>
+                            <p>
+                                : Medellín, Colombia
+                            </p>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="icon">
+                                <i class="fa-solid fa-envelope"></i>
+                                Email
+                            </div>
+                            <p>
+                                : alejovesga95@gmail.com
+                            </p>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="icon">
+                                <i class="fa-solid fa-user-graduate"></i>
+                                Education
+                            </div>
+                            <p>
+                                : Universidad Nacional de Colombia, Medellín
+                            </p>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="icon">
+                                <i class="fa-solid fa-earth-americas"></i>
+                                Languages
+                            </div>
+                            <p>
+                                : Spanish, English
+                            </p>
+                        </div>
+                    </div>
+                    <div class="contact-icons">
+                        <div class="contact-icon">
+                            <a href="https://www.facebook.com/alejandro.vesga.33?locale=es_LA" target="_blank">
+                                <i class="fa-brands fa-facebook"></i>
+                            </a>
+                            <a href="https://twitter.com/alejandro_vesga" target="_blank">
+                                <i class="fa-brands fa-x-twitter"></i>
+                            </a>
+                            <a href="www.linkedin.com/in/alejandro-vesga-643031227" target="_blank">
+                                <i class="fa-brands fa-linkedin"></i>
+                            </a>
+                            <a href="https://github.com/Alvesgave" target="_blank">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-contact">
+                    <form action="" class="contact-form" id="frm-email">
+                        <div class="input-control icontrol-2">
+                            <input type="text" id="username" required placeholder="Your name">
+                            <input type="text" id="email" required placeholder="Your email">
+                        </div>
+                        <div class="input-control">
+                            <input type="text" id="subject" required placeholder="Enter subject">
+                        </div>
+                        <div class="input-control">
+                            <textarea name="msg" id="msg" required cols="15" rows="8" placeholder="Message here..."></textarea>
+                        </div>
+                        <div class="submit-btn">
+                            <input type="submit" value="Submit" class="sub-btn">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+        </section>
+    </main>
+
+    <div class="controls">
+        <div class="control control-1 active-btn" data-id="header">
+            <i class="fa-solid fa-house"></i>
+        </div>
+
+        <div class="control control-2 " data-id="about">
+            <i class="fa-solid fa-user"></i>
+        </div>
+
+        <div class="control control-3 " data-id="portfolio">
+            <i class="fa-solid fa-briefcase"></i>
+        </div>
+
+        <div class="control control-4 " data-id="contact">
+            <i class="fa-solid fa-envelope"></i>
+        </div>
+    </div>
+
+    <!-- offcanvas -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="sidebar" aria-labelledby="sidebar-label">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="sidebar-label">My hobbies</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <p>My life is a tapestry woven with a variety of hobbies that keep me engaged and energized. At the core of my interests is soccer, a sport that ignites my competitive spirit and fuels my love for teamwork. Whether it's a friendly match or a league game, the rush of the field is where I truly shine. <br><br>
+
+            To complement my athletic side, I'm a regular at the gym. There, I sculpt my physique, set new fitness goals, and maintain my strength and vitality. The gym isn't just about exercise; it's a place where I find both physical and mental well-being. <br><br>
+
+            In contrast, I also have a digital side. Video games are my go-to for relaxation and adventure. They offer an escape into fantastical realms, where I can explore, strategize, and connect with friends online. The world of gaming provides a different kind of excitement and mental challenge. <br><br>
+
+            Yet, amid the hustle and bustle of life, I find solace in nature. Hiking is my escape, a chance to disconnect from screens and reconnect with the beauty of the outdoors. Whether it's a serene forest trail or an ambitious mountain hike, the tranquility of nature rejuvenates my spirit. <br><br>
+
+            These hobbies form the fabric of my life, each thread adding its own unique texture. They provide balance, excitement, and a sense of fulfillment that keeps me thriving.</p>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+
+    <!-- Offcanvas script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
